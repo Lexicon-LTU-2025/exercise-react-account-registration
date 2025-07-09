@@ -1,39 +1,53 @@
-# Account Registration
+# Exercise: Account Registration – React Edition
 
-In this exercise you will build a form in which you can simulate a creation of an account to some web application. The purpose of this exercise is to practise on using different event listeners _( several are needed )_ but also to create a basic application that is comprised of HTML, CSS and JavaScript.
+In this version of the **Account Registration** exercise, you’ll build the same form – but using **React**.
 
-The form should have to following content and functionlity.
+👉 If you haven’t done the original HTML/CSS/JavaScript version yet, or if you want to refresh your memory, you can find it here:
+**[Original Account Registration – Vanilla JS version](#)**
 
-1. Five inputs must be included and they should reside within a `<form>`. `name`and `username` which must be of type text. One input for `email` that is of type email and two inputs for `password` and `confirm password`. They should of course be of type password.
+## Goal
 
-2. One input or button for submitting the form.
+You are going to **rebuild the account registration form** using **React**. The design and functionality remain the same, but now you’re expected to **apply modern React practices**:
 
-3. Every input should be accompanied by a label and they must be connected. That means that if you click on the label, the corresponding input gets selected _( focus )_. You are **NOT!** allowed to use the `for` attribute on the label in order to solve this.
+- Use **components** to split the form into logical parts (e.g. `InputField`, `Form`, `SubmitButton`).
+- **Lift state up** where necessary, and control the form inputs via state.
+- Use **event handlers** (e.g. `onChange`, `onSubmit`) appropriately.
+- **Use React refs** where helpful (e.g. for focusing or label connections).
+- Focus on clean logic, minimal duplication, and reusable parts.
 
-4. All of the inputs must be mandatory, meaning that you shouldn't be able to submit the form if one of the inputs is missing a value.
+## Instructions
 
-5. The `password` must be atleast 8 characters long. If the password is not of length, the input should receive appropriate styling to visualize this for the user. When the passwords is long enough the styling returns to normal _( or to an affirmative state if you would like )_.
+All **requirements from the original exercise still apply**. That means:
 
-6. The `confirm password` must be validated to be identical as the `password`. If that's not the case, the input should receive appropriate styling to visualize this for the user, much like the previous part.
+- The form must contain five inputs: `name`, `username`, `email`, `password`, and `confirm password`.
+- The inputs should be within a `<form>`, and each must have a **connected label**, **without** using the `for` attribute.
+- All fields are **required**.
+- Passwords must:
 
-7. If the `password` or the `confirm password` has not been correctly typed, the submit button should be disabled.
+  - Be at least 8 characters long.
+  - Match each other.
+  - Be validated **live**, with appropriate visual feedback.
 
-8. There must be a submit event in the application. When the form is submitted all of the data should be presented in an object like this:
+- The **submit button must be disabled** until passwords are valid.
+- On submit, log the values in this structure:
 
 ```js
 const registrationData = {
-  name: "first name last name",
-  username: "username",
-  email: "email@email.com",
-  password: "password",
+  name: 'first name last name',
+  username: 'username',
+  email: 'email@email.com',
+  password: 'password',
 };
 ```
 
-This object is to be written to the console or written in an alert. The values should of course be corresponding to the values that the user have typed.
+- Style the form cleanly – no need to copy the example image, just make it readable and user-friendly.
 
-9. I would like that you also focus on writing clean code and use decent, thought-through, stylings.
+## Reminder
 
-_( The image below is just AN EXAMPLE on how it CAN look! You have free reins on the design. )_
+This exercise is not just about replicating the form – it's about **thinking like a React developer**:
 
-<figure style="text-align: center;"><img src="example-img.png">
-<figcaption>Example</figcaption></figure>
+- Use **controlled components** for your inputs.
+- Structure your code for **reusability and clarity**.
+- Keep logic **separated from presentation** where possible.
+
+Good luck!
