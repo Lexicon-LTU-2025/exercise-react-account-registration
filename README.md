@@ -1,6 +1,6 @@
 # Exercise: Account Registration – React Edition
 
-In this exerciss, the **Account Registration**, you’ll build the a form using **React**.
+In this exercise, the **Account Registration**, you’ll build the a form using **React**.
 
 ## Goal
 
