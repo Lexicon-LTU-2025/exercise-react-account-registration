@@ -1,10 +1,10 @@
 # Exercise: Account Registration – React Edition
 
-In this version of the **Account Registration** exercise, you’ll build the same form – but using **React**.
+In this exerciss, the **Account Registration**, you’ll build the a form using **React**.
 
 ## Goal
 
-You are going to **rebuild the account registration form** using **React**. The design and functionality remain the same, but now you’re expected to **apply modern React practices**:
+You are going to build an account registration form using React. The design and functionality should match the specification, and you’re expected to apply modern React practices:
 
 - Use **components** to split the form into logical parts (e.g. `InputField`, `Form`, `SubmitButton`).
 - **Lift state up** where necessary, and control the form inputs via state.
@@ -13,8 +13,6 @@ You are going to **rebuild the account registration form** using **React**. The 
 - Focus on clean logic, minimal duplication, and reusable parts.
 
 ## Instructions
-
-All **requirements from the original exercise still apply**. That means:
 
 - The form must contain five inputs: `name`, `username`, `email`, `password`, and `confirm password`.
 - The inputs should be within a `<form>`, and each must have a **connected label**, **without** using the `for` attribute.
@@ -41,7 +39,7 @@ const registrationData = {
 
 ## Reminder
 
-This exercise is not just about replicating the form – it's about **thinking like a React developer**:
+This exercise is not just about creating a form – it's about **thinking like a React developer**:
 
 - Use **controlled components** for your inputs.
 - Structure your code for **reusability and clarity**.
