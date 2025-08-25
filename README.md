@@ -2,9 +2,6 @@
 
 In this version of the **Account Registration** exercise, you’ll build the same form – but using **React**.
 
-👉 If you haven’t done the original HTML/CSS/JavaScript version yet, or if you want to refresh your memory, you can find it here:
-**[Original Account Registration – Vanilla JS version](https://github.com/Lexicon-LTU-2025/exercise-ts-account-registration)**
-
 ## Goal
 
 You are going to **rebuild the account registration form** using **React**. The design and functionality remain the same, but now you’re expected to **apply modern React practices**:
